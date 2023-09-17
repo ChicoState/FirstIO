@@ -28,7 +28,19 @@ int main(){
       cout << "=" << num1*num2 << endl;
     }
     else if( input == "divide" ){
-      cout << "=" << num1/num2 << endl;
+      int remainder = num1%num2;
+
+      if( num2 == 0 ){
+        cout << "ERROR: Cannot divide by zero\n";
+      }
+      else{
+        cout << "=" << num1/num2;
+        
+        if( remainder > 0 ){
+          cout << " with a remainder of " << remainder;
+        }
+        cout << endl;
+      }
     }
       
   }
