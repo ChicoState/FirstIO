@@ -5,6 +5,7 @@ int main(){
   string input = "";
   int num1 = 0;
   int num2 = 0;
+  int remainder = 0; 
 
   cout << "? ";
   cin >> input;
@@ -28,7 +29,14 @@ int main(){
       cout << "=" << num1*num2 << endl;
     }
     else if( input == "divide" ){
-      cout << "=" << num1/num2 << endl;
+      cout << "=" << num1/num2;
+      remainder = num1%num2;
+      if (remainder == 0){
+        cout << endl;
+      }
+      else{
+        cout << " with a remainder of " << remainder << endl; 
+      }
     }
       
   }
