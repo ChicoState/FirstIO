@@ -31,11 +31,11 @@ int main(){
     else if( input == "divide" ){
       cout << "=" << num1/num2;
       remainder = num1%num2;
-      if (remainder = 0){
+      if (remainder == 0){
         cout << endl;
       }
       else{
-        cout << "with a remainder of " << remainder << endl; 
+        cout << " with a remainder of " << remainder << endl; 
       }
     }
       
