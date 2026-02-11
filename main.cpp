@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int main(){
+int main()
   string input = "";
   int num1 = 0;
   int num2 = 0;
